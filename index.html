@@ -5,47 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture store</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo"><img src="img/logo.webp" alt="SOFA" width="108"></a>
-            <div class="menu">
-                <a href="#promotions">Promotions</a>
-                <a href="#best-selling">Best-selling</a>
-                <a href="#products">2020 Collection</a>
-                <a href="#promotions">Testimonials</a>
-                <a href="#">Blog</a>
-                <a href="#contacts">Contact us</a>
-                <a href="#products" class="button outline-button ">Shop now</a>
-            </div>            
-        </nav>
-        <div>
-            <h1 class="heading"><span class="highlight">Furniture</span> for Home & Office</h1>
-            <p>500+ models of cushioned furniture, lamps and accessories.</p>
-            <a href="#best-selling" class="btn green-button arrow">Best-selling products</a>
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="img/logo.webp" alt="SOFA"></a>
+                <div class="menu">
+                    <a href="#promotions" class="menu-item">Promotions</a>
+                    <a href="#best-selling" class="menu-item">Best-selling</a>
+                    <a href="#products" class="menu-item">2020 Collection</a>
+                    <a href="#promotions" class="menu-item">Testimonials</a>
+                    <a href="#" class="menu-item">Blog</a>
+                    <a href="#contacts" class="menu-item">Contact us</a>
+                    <a href="#products" class="button outline-button">Shop now</a>
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1 class="heading"><span class="highlight">Furniture</span> for Home & Office</h1>
+                <p class="subtitle">500+ models of cushioned furniture, lamps and accessories.</p>
+                <a href="#best-selling" class="button green-button arrow">Best-selling products</a>
+            </div>
         </div>
     </header>
     <main>
-        <section id="promotions">
-            <div>
-                <img src="img/15off.webp" alt="Tables & Cabinets" width="370">
+        <section id="promotions" class="container wrapper">
+            <div class="promo">
+                <img src="img/15off.webp" alt="Tables & Cabinets" class="promo-img">
                 <h3><span class="highlight">15% off</span> on Tables & Cabinets</h3>
-                <a href="#" class="arrow">Learn more</a>
+                <a href="#" class="button transparent-button arrow">Learn more</a>
             </div>
-            <div>
-                <img src="img/all-white.webp" alt="White furniture" width="370">
+            <div class="promo">
+                <img src="img/all-white.webp" alt="White furniture" class="promo-img">
                 <h3>All-White Collection in Store</h3>
-                <a href="#" class="arrow">Learn more</a>
+                <a href="#" class="button transparent-button arrow">Learn more</a>
             </div>
-            <div>
-                <img src="img/ARM-collection.webp" alt="New by ARM" width="370">
+            <div class="promo">
+                <img src="img/ARM-collection.webp" alt="New by ARM" class="promo-img">
                 <h3><span class="highlight">NEW!</span> Modern Collection by ARM</h3>
-                <a href="#" class="arrow">Learn more</a>
+                <a href="#" class="button transparent-button arrow">Learn more</a>
             </div>
         </section>
         <div class="banner">
-            <p class="heading"><span class="highlight">Top Collections</span> of Designer Cushioned Furniture</p>
+            <p class="heading container"><span class="highlight">Top Collections</span> of Designer Cushioned Furniture</p>
         </div>
         <section id="best-selling">
             <h2>Best-selling Products</h2>
@@ -93,93 +96,87 @@
         <section class="" id="products">
             <h2>Our Fave Finds</h2>
             <p>The best designer products from the 2020 collections.</p>
-            <ul>
+            <div class="tab-title">
+                <p>Armchairs</p>
+                <p>Lamps</p>
+                <p>Tables</p>
+            </div>
+            <ul class="tab-items">
                 <li>
-                    <p>Armchairs</p>
-                    <ul>
-                        <li>
-                            <a href="#"><img src="img/shop-items/armchairs/fusion-armchair.png" alt="Fusion armchair" height="270"></a>
-                            <a href="#"><h3>Fusion armchair, LEXX</h3></a>
-                            <p>320,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/armchairs/aurora-armchair.png" alt="Aurora armchair" height="270"></a>
-                            <a href="#"><h3>Aurora armchair, MDS</h3></a>
-                            <p>210,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/armchairs/cloud-armchair.png" alt="Cloud armchair" height="270"></a>
-                            <a href="#"><h3>Cloud armchair, DIX</h3></a>
-                            <p>150,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/armchairs/jeanine-armchair.png" alt="Jeanine armchair" height="270"></a>
-                            <a href="#"><h3>Jeanine armchair, KUKO</h3></a>
-                            <p>210,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                    </ul>
+                    <a href="#"><img src="img/shop-items/armchairs/fusion-armchair.png" alt="Fusion armchair" height="270"></a>
+                    <a href="#"><h3>Fusion armchair, LEXX</h3></a>
+                    <p>320,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
                 </li>
                 <li>
-                    <p>Lamps</p>
-                    <ul>
-                        <li>
-                            <a href="#"><img src="img/shop-items/lamps/3-piece-minimal.png" alt="3-piece Minimal lamp" height="270"></a>
-                            <a href="#"><h3>3-piece Minimal, ARM</h3></a>
-                            <p>110,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/lamps/red-drops.png" alt="Red Drops lamp" height="270"></a>
-                            <a href="#"><h3>Red Drops, KUKO</h3></a>
-                            <p>210,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/lamps/delar.png" alt="Delar lamp" height="270"></a>
-                            <a href="#"><h3>Delar, Uni Studio</h3></a>
-                            <p>350,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/lamps/bubbles.png" alt="Bubbles lamp" height="270"></a>
-                            <a href="#"><h3>Bubbles, Udion</h3></a>
-                            <p>410,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                    </ul>
+                    <a href="#"><img src="img/shop-items/armchairs/aurora-armchair.png" alt="Aurora armchair" height="270"></a>
+                    <a href="#"><h3>Aurora armchair, MDS</h3></a>
+                    <p>210,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
                 </li>
                 <li>
-                    <p>Tables</p>
-                    <ul>
-                        <li>
-                            <a href="#"><img src="img/shop-items/tables/upi-table.png" alt="Upi table" height="270"></a>
-                            <a href="#"><h3>Upi table, Landstrom</h3></a>
-                            <p>90,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/tables/monica-table.png" alt="Monica table" height="270"></a>
-                            <a href="#"><h3>Monica table, Orro</h3></a>
-                            <p>110,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/tables/snitch-cabinet.png" alt="Snitch cabinet" height="270"></a>
-                            <a href="#"><h3>Snitch cabinet, ARM</h3></a>
-                            <p>100,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/shop-items/tables/hugo-table.png" alt="Hugo table" height="270"></a>
-                            <a href="#"><h3>Hugo table, KUKO studio</h3></a>
-                            <p>99,00USD</p>
-                            <button type="button" class="outline-button">Order now</button>
-                        </li>
-                    </ul>
+                    <a href="#"><img src="img/shop-items/armchairs/cloud-armchair.png" alt="Cloud armchair" height="270"></a>
+                    <a href="#"><h3>Cloud armchair, DIX</h3></a>
+                    <p>150,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/armchairs/jeanine-armchair.png" alt="Jeanine armchair" height="270"></a>
+                    <a href="#"><h3>Jeanine armchair, KUKO</h3></a>
+                    <p>210,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+            </ul>
+            <ul class="tab-items">
+                <li>
+                    <a href="#"><img src="img/shop-items/lamps/3-piece-minimal.png" alt="3-piece Minimal lamp" height="270"></a>
+                    <a href="#"><h3>3-piece Minimal, ARM</h3></a>
+                    <p>110,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/lamps/red-drops.png" alt="Red Drops lamp" height="270"></a>
+                    <a href="#"><h3>Red Drops, KUKO</h3></a>
+                    <p>210,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/lamps/delar.png" alt="Delar lamp" height="270"></a>
+                    <a href="#"><h3>Delar, Uni Studio</h3></a>
+                    <p>350,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/lamps/bubbles.png" alt="Bubbles lamp" height="270"></a>
+                    <a href="#"><h3>Bubbles, Udion</h3></a>
+                    <p>410,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+            </ul>
+            <ul class="tab-items">
+                <li>
+                    <a href="#"><img src="img/shop-items/tables/upi-table.png" alt="Upi table" height="270"></a>
+                    <a href="#"><h3>Upi table, Landstrom</h3></a>
+                    <p>90,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/tables/monica-table.png" alt="Monica table" height="270"></a>
+                    <a href="#"><h3>Monica table, Orro</h3></a>
+                    <p>110,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/tables/snitch-cabinet.png" alt="Snitch cabinet" height="270"></a>
+                    <a href="#"><h3>Snitch cabinet, ARM</h3></a>
+                    <p>100,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
+                </li>
+                <li>
+                    <a href="#"><img src="img/shop-items/tables/hugo-table.png" alt="Hugo table" height="270"></a>
+                    <a href="#"><h3>Hugo table, KUKO studio</h3></a>
+                    <p>99,00USD</p>
+                    <button type="button" class="outline-button">Order now</button>
                 </li>
             </ul>
         </section>

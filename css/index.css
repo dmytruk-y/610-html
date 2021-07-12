@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.main-header {
+    min-height: 100vh;
+    background-image: url(../img/res/header-bg-green-chair.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-header .logo {
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    max-width: 108px;
+}
+
+.main-header .logo img {
+    /* vertical-align: middle; */
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    line-height: 16px;
+}
+
+.main-header .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-header .menu-item {
+    padding: 5px 7.5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.main-header .menu :last-child {
+    margin-left: 10px;
+}
+
+button,
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    padding: 0 22px;
+    color: #333;
+    font-family: 'Hind', sans-serif;
+    font-size: 10.8px;
+    text-transform: uppercase;
+    color: rgb(117, 113, 113);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.outline-button {
+    border: 2px solid rgb(123, 181, 124);
+
+}
+
+.green-button {
+    background-color: rgb(123, 181, 124);
+    color: #fff;
+}
+.arrow {
+    gap: 10px;
+}
+
+.arrow::after {
+    content: "";
+    background: url(../img/res/arrow.svg) no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+
+    /* padding-left: 5px; */
+}
+.heading {
+    font-size: 84px;
+    color: #333;
+    line-height: 1.1em;
+    font-weight: 800;
+
+}
+
+.highlight {
+    color: #7bb57c;
+}
+
+.header-text {
+    max-width: 770px;
+    position: absolute;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 50%;
+    /* margin-top: -50%; */
+    transform: translate(0, -30%);
+}
+
+.header-text .subtitle {
+    font-size: 18px;
+    color: #000;
+
+}
+
+.header-text .button {
+    height: 55px;
+    line-height: 4em;
+    font-size: 13.2px;
+    padding: 0 32px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#promotions {
+    margin-top: 100px;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.promo-img {
+    max-height: 252px;
+    width: 370px;
+    object-fit: cover;
+}
+.promo h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+}
+
+.promo .highlight {
+    font-weight: 700;
+}
+
+.transparent-button {
+    font-size: 12px;
+    color: #242524;
+    min-height: 32px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.banner {
+    min-height: 550px;
+    background-image: url(../img/res/banner-bg-dots.png);
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+}
+.banner .heading {
+    text-align: center;
+}
