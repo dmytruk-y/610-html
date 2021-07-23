@@ -11,7 +11,10 @@
     <header class="main-header">
         <div class="container">
             <nav>
-                <a href="#" class="logo"><img src="img/logo.webp" alt="SOFA"></a>
+                <div class="burger">
+                    <a href="#" class="logo"><img src="img/logo.webp" alt="SOFA"></a>
+                    <div class="burger-button"><span></span></div>
+                </div>
                 <div class="menu">
                     <a href="#promotions" class="menu-item">Promotions</a>
                     <a href="#best-selling" class="menu-item">Best-selling</a>
@@ -32,17 +35,23 @@
     <main>
         <section id="promotions" class="container promo-wrapper">
             <div class="promo">
-                <img src="img/15off.webp" alt="Tables & Cabinets" class="promo-img">
+                <div class="promo-img">
+                    <img src="img/15off.webp" alt="Tables & Cabinets">
+                </div>
                 <h3><span class="highlight">15% off</span> on Tables & Cabinets</h3>
                 <a href="#" class="button transparent-button arrow">Learn more</a>
             </div>
             <div class="promo">
-                <img src="img/all-white.webp" alt="White furniture" class="promo-img">
+                <div class="promo-img">
+                    <img src="img/all-white.webp" alt="White furniture">
+                </div>
                 <h3>All-White Collection in Store</h3>
                 <a href="#" class="button transparent-button arrow">Learn more</a>
             </div>
             <div class="promo">
-                <img src="img/ARM-collection.webp" alt="New by ARM" class="promo-img">
+                <div class="promo-img">
+                    <img src="img/ARM-collection.webp" alt="New by ARM">
+                </div>
                 <h3><span class="highlight">NEW!</span> Modern Collection by ARM</h3>
                 <a href="#" class="button transparent-button arrow">Learn more</a>
             </div>
@@ -109,7 +118,7 @@
             </div>
             <ul class="tab-items">
                 <li class="shop-item">
-                    <a href="#"><img src="img/shop-items/armchairs/fusion-armchair.png" alt="Fusion armchair"></a>
+                    <a href="#" class="item"><img src="img/shop-items/armchairs/fusion-armchair.png" alt="Fusion armchair"></a>
                     <h3 class="product-title"><a href="#">Fusion armchair, LEXX</a></h3>
                     <p class="price">320,00USD</p>
                     <button type="button" class="outline-button">Order now</button>
@@ -186,21 +195,22 @@
                 </li>
             </ul>
         </section>
-        <div class="brands container">
-            <img src="img/brands/idea.webp" alt="iDEA" draggable="false">
-            <img src="img/brands/artvan.webp" alt="Art Van" draggable="false">
-            <img src="img/brands/ikea.webp" alt="IKEA" draggable="false">
-            <img src="img/brands/vitra.webp" alt="Vitra" draggable="false">
-            <img src="img/brands/walmart.webp" alt="Walmart" draggable="false">
-            <img src="img/brands/kronheims.webp" alt="Kronheims" draggable="false">
-            <img src="img/brands/seamans.webp" alt="Seaman's" draggable="false">
+        <div class="container">
+            <div class="brands">
+                <img src="img/brands/idea.webp" class="show" alt="iDEA" draggable="false">
+                <img src="img/brands/artvan.webp" alt="Art Van" draggable="false">
+                <img src="img/brands/ikea.webp" alt="IKEA" draggable="false">
+                <img src="img/brands/vitra.webp" alt="Vitra" draggable="false">
+                <img src="img/brands/walmart.webp" alt="Walmart" draggable="false">
+                <img src="img/brands/kronheims.webp" alt="Kronheims" draggable="false">
+                <img src="img/brands/seamans.webp" alt="Seaman's" draggable="false">
+            </div>
         </div>
-         
         <section class="top-brands">
             <div class="wrapper">
                 <div class="content">
-                    <p class="tag">Our Top Brands</p>
-                    <h3 class="title">Colorful Collections by KUKO</h3>
+                    <p class="div-tag">Our Top Brands</p>
+                    <h3 class="div-title">Colorful Collections by KUKO</h3>
                     <p class="text">KUKO is one of the new-wave furniture manufacturers. They are located in California, USA. Inspired by the sun and ocean, they create unique products bringing joy to your home or office. Our store presents the best KUKO sofas and armchairs from the collections of 2018-2020.</p>
                     <a href="#" class="button outline-button arrow">SHOP KUKO</a>
                 </div>
@@ -208,8 +218,8 @@
             </div>
             <div class="wrapper">
                 <div class="content">
-                    <p class="tag">Our Top Brands</p>
-                    <h3 class="title">Classics by Landstrom Design</h3>
+                    <p class="div-tag">Our Top Brands</p>
+                    <h3 class="div-title">Classics by Landstrom Design</h3>
                     <p class="text">Landstrom Design, founded in Copenhagen, creates universal pieces of cushioned furniture. Its sofas and armchairs look good in any interior styles, from minimalism to shabby chic. Such furniture will never go out of style and will catch the eye of your guests.</p>
                     <a href="#" class="button outline-button arrow">SHOP LANDSTROM</a>
                 </div>
@@ -226,51 +236,70 @@
                         <p class="name">Judy Peterson</p>
                         <p class="city">New York</p>
                         <p class="message">I'm very pleased with our new sofa! It fits perfectly into the interior. The assemblage of the furniture was super fast!</p>
-                        <time datetime="2018-10-28">October 28, 2018</time>
+                        <p class="time">
+                            <time datetime="2018-10-28">October 28, 2018</time>
+                        </p>
                     </li>
                     <li class="card">
                         <img src="img/customers-img/kyle-hudson.webp" alt="Kyle's profile picture">
                         <p class="name">Kyle Hudson</p>
                         <p class="city">Houston</p>
                         <p class="message">Thank you for helping me choose new armchairs in the living room. They look great and fit perfectly into my interior.</p>
-                        <time datetime="2019-06-13">June 13, 2019</time>
+                        <p class="time">
+                            <time datetime="2019-06-13">June 13, 2019</time>
+                        </p>
                     </li>
                     <li class="card">
                         <img src="img/customers-img/hanna-levy.webp" alt="Hanna's profile picture">
                         <p class="name">Hanna Levy</p>
                         <p class="city">Boston</p>
                         <p class="message">Next-day delivery surprised me a lot! I thought I would have to wait for weeks! Thank you for the quick processing of my order!</p>
-                        <time datetime="2019-10-04">October 04, 2019</time>
+                        <p class="time">
+                            <time datetime="2019-10-04">October 04, 2019</time>
+                        </p>
                     </li>
                     <li class="card">
                         <img src="img/customers-img/jim-mockeen.webp" alt="Jim's profile picture">
                         <p class="name">Jim Mockeen</p>
                         <p class="city">Chicago</p>
                         <p class="message">I not only found the perfect sofa at a reasonable price but also stylish lamps which were exactly what I wanted. Thank you, SOFA!</p>
-                        <time datetime="2020-01-18">January 18, 2020</time>
+                        <p class="time">
+                            <time datetime="2020-01-18">January 18, 2020</time>
+                        </p>
                     </li>
                     <li class="card">
                         <img src="img/customers-img/karen-morning.webp" alt="Karen's profile picture">
                         <p class="name">Karen Morning</p>
                         <p class="city">Washington</p>
                         <p class="message">My order arrived really quickly and I was amazed by the quality - PERFECT. I would and have recommended SOFA to others.</p>
-                        <time datetime="2020-02-03">February 03, 2020</time>
+                        <p class="time">
+                            <time datetime="2020-02-03">February 03, 2020</time>
+                        </p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>About us</h2>
-                <p>We sell designer furniture, lamps & decor across the USA</p>
-                <h3>How to make an order?</h3>
-                <p>Specify the name of the preferred product in our contact form and provide all the needed details. Our manager will contact you soon after checking the stock status.</p>
-                <h3>Dispatch v Delivery</h3>
-                <p>On the product page, you can see a dispatch estimate e.g. 'within 2-3 weeks'. Dispatch is when we send the item to our delivery partner, not the date it is delivered to your door. If you need more accurate delivery times, check it with the manager.</p>
-                <h3>Returns & Refunds</h3>
-                <p>If you won't like the product, you can return it to us within 14 days for a full refund. Simply contact us and we will assist you with your return. Remember that you'll need to disassemble the item and repackage it, in order for us to collect the product and return it to the warehouse.</p>
+        <section class="container details">
+            <div class="about-us">
+                <h2 class="div-tag">About us</h2>
+                <p class="div-title">We sell designer furniture, lamps & decor across the USA</p>
+                <div class="detail">
+                    <h3>How to make an order?</h3>
+                    <p>Specify the name of the preferred product in our contact form and provide all the needed details. Our manager will contact you soon after checking the stock status.</p>
+                    <div class="detail">
+                </div>
+                    <h3>Dispatch v Delivery</h3>
+                    <p>On the product page, you can see a dispatch estimate e.g. 'within 2-3 weeks'. Dispatch is when we send the item to our delivery partner, not the date it is delivered to your door. If you need more accurate delivery times, check it with the manager.</p>
+                    <div class="detail">
+                </div>
+                    <h3>Returns & Refunds</h3>
+                    <p>If you won't like the product, you can return it to us within 14 days for a full refund. Simply contact us and we will assist you with your return. Remember that you'll need to disassemble the item and repackage it, in order for us to collect the product and return it to the warehouse.</p>
+                </div>
             </div>
-        </section>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/gGzxwskev4Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section> <!--
         <section>
             <ul>
                 <li>
