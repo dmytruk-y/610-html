@@ -299,85 +299,106 @@
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/gGzxwskev4Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </section> <!--
-        <section>
-            <ul>
-                <li>
-                    <h3>Next-day Delivery</h3>
-                    <p>Free next-day delivery to any corner of the USA for all orders over $300.</p>
+        </section> 
+        <section class="advantages">
+            <ul class="container wrapper">
+                <li class="item a-deliv">
+                    <h3 class="title">Next-day Delivery</h3>
+                    <p class="text">Free next-day delivery to any corner of the USA for all orders over $300.</p>
                 </li>
-                <li>
-                    <h3>100% Money back</h3>
-                    <p>If you won't like the product, return in to us in 14 days and get the full refund.</p>
+                <li class="item a-money">
+                    <h3 class="title">100% Money back</h3>
+                    <p class="text">If you won't like the product, return in to us in 14 days and get the full refund.</p>
                 </li>
-                <li>
-                    <h3>Warranty handling</h3>
-                    <p>If you find a defect in the product or a breakdown occurs, we will fix it for free.</p>
+                <li class="item a-warranty">
+                    <h3 class="title">Warranty handling</h3>
+                    <p class="text">If you find a defect in the product or a breakdown occurs, we will fix it for free.</p>
                 </li>
-                <li>
-                    <h3>Payment methods</h3>
-                    <p>We accept payment by cash, Visa and MasterCard, PayPal and many other options.</p>
+                <li class="item a-payment">
+                    <h3 class="title">Payment methods</h3>
+                    <p class="text">We accept payment by cash, Visa and MasterCard, PayPal and many other options.</p>
                 </li>
             </ul>
         </section>
-        <section id="contacts">
-            <h2>Contacts</h2>
-            <p>We are always happy to chat with you. Contact us in any convenient way and we will answer all your questions.</p>
-            <dl>
-                <dt>Address</dt>
-                <dd>93-40 Queens Blvd, Flushing,<br>
-                    NY 11374, USA</dd>
-                <dt>Hours</dt>
-                <dd>Monday - Saturday: 11 AM - 9 PM<br>
-                    Sunday: 11 AM - 7 PM</dd>
-                <dt>Contacts</dt>
-                <dd><a href="tel:+12345678900">+1 (234) 567 89 00</a><br>
-                    <a href="mailto:sofa@email.com">sofa@email.com</a></dd>
-            </dl>
+        <section id="contacts" class="container">
+            <div class="contacts-wrapper">
+                <h2 class="section-title">Contacts</h2>
+                <p class="section-subtitle">We are always happy to chat with you. Contact us in any convenient way and we will answer all your questions.</p>
+                <div class="info">
+                    <div class="info-item">
+                        <p class="title">Address</p>
+                        <p class="text">93-40 Queens Blvd, Flushing,<br>
+                            NY 11374, USA</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="title">Hours</p>
+                        <p class="text">Monday - Saturday: 11 AM - 9 PM<br>
+                            Sunday: 11 AM - 7 PM</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="title">Contacts</p>
+                        <p class="text"><a href="tel:+12345678900">+1 (234) 567 89 00</a><br>
+                            <a href="mailto:sofa@email.com">sofa@email.com</a></p>
+                    </div>
+                </div>
+            </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4147359377043!2d-73.86789958459445!3d40.730898779329806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e482aec40b1%3A0xf0e427633bfec4a0!2zOTMtNDAgUXVlZW5zIEJsdmQsIFF1ZWVucywgTlkgMTEzNzQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1625829130876!5m2!1suk!2sua" width="570" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <form action="https://formspree.io/f/xknkzlbw" method="POST">
-                <p><input type="text" name="name" placeholder="Enter your full name*"></p>
-                <p><input type="tel" name="phone-number" placeholder="Enter your phone number*"></p>
-                <p><input type="email" name="email" placeholder="Enter your e-mail*"></p>
-                <p><input type="text" name="product-name" placeholder="Enter chosen products*"></p>
-                <p><input type="number" name="quantity" placeholder="Enter quantity*"></p>
-                <p><textarea name="message" placeholder="Type your message" cols="30" rows="10"></textarea></p>
-                <input type="submit" value="SUBMIT">
+                <p><input type="text" name="name" placeholder="Enter your full name*" required></p>
+                <p><input type="tel" name="phone-number" placeholder="Enter your phone number*" required></p>
+                <p><input type="email" name="email" placeholder="Enter your e-mail*" required></p>
+                <p><input type="text" name="product-name" placeholder="Enter chosen products*" required></p>
+                <p><input type="text" name="quantity" placeholder="Enter quantity*" required></p>
+                <p><textarea name="message" placeholder="Type your message"></textarea></p>
+                <input type="submit" value="SUBMIT" class="button green-button">
             </form>
         </section>
     </main>
     <footer>
-        <div class="info">
-            <div>
-                <a href="#" class="logo"><img src="img/logo.webp" alt="SOFA"></a>
-                <p>We sell designer furniture, lamps & decor across the USA. We offer the best collections by American and European designers.</p>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-info">
+                    <a href="#" class="logo"><img src="img/footer-logo.webp" alt="SOFA"></a>
+                    <p class="text">We sell designer furniture, lamps & decor across the USA. We offer the best collections by American and European designers.</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#promotions">Promotions</a>
+                    <a href="#best-selling">Best-selling</a>
+                    <a href="#products">2020 Collection</a>
+                    <a href="#promotions">Testimonials</a>
+                    <a href="#">Blog</a>
+                    <a href="#contacts">Contact us</a>
+                </div>
+                <div class="footer-socials">
+                    <p>Follow Us</p>
+                    <ul class="socials-list">
+                        <li>
+                            <a href="https://facebook.com/" class="fb">
+                                <svg class="si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992 svgIcon_1J7 filled_Qbi darkTheme_3jZ" viewBox="0 0 32 32" style="border-radius:4px"><path class="outer_bDW" d="M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z M13.6383065,25 L16.9133212,25 L16.9133212,16.0044 L19.3701815,16.0044 L19.8560792,13.1936 L16.9133212,13.1936 L16.9133212,11.1568001 C16.9133212,10.5002 17.3378823,9.81079996 17.944655,9.81079996 L19.6171262,9.81079996 L19.6171262,7 L17.567445,7 L17.567445,7.0126 C14.3603601,7.129 13.7014413,8.98640001 13.6443004,10.9374 L13.6383065,10.9374 L13.6383065,13.1936 L12,13.1936 L12,16.0044 L13.6383065,16.0044 L13.6383065,25 Z"></path><path d="M5,1 C2.790861,1 1,2.790861 1,5 L1,27 C1,29.209139 2.790861,31 5,31 L27,31 C29.209139,31 31,29.209139 31,27 L31,5 C31,2.790861 29.209139,1 27,1 L5,1 Z M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z" class="border_2yy"></path><path class="logo_2gS" d="M13.6383 25H16.9133V16.0044H19.3702L19.8561 13.1936H16.9133V11.1568C16.9133 10.5002 17.3379 9.8108 17.9447 9.8108H19.6171V7H17.5674V7.0126C14.3604 7.129 13.7014 8.9864 13.6443 10.9374H13.6383V13.1936H12V16.0044H13.6383V25Z" style="color:#333333;fill:#333333"></path></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/" class="insta">
+                                <svg class="si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992 svgIcon_1J7 filled_Qbi darkTheme_3jZ" viewBox="0 0 32 32" style="border-radius:4px"><g><path class="outer_bDW" d="M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z M12.7045454,8 C10.1221593,8 8,10.1193185 8,12.7045454 L8,19.2954545 C8,21.8778407 10.1193185,24 12.7045454,24 L19.2954545,24 C21.8778407,24 24,21.8806822 24,19.2954545 L24,12.7045454 C24,10.1221593 21.8806822,8 19.2954545,8 L12.7045454,8 Z M12.7045454,9.45454545 L19.2954545,9.45454545 C21.0937498,9.45454545 22.5454545,10.9062502 22.5454545,12.7045454 L22.5454545,19.2954545 C22.5454545,21.0937498 21.0937498,22.5454545 19.2954545,22.5454545 L12.7045454,22.5454545 C10.9062502,22.5454545 9.45454545,21.0937498 9.45454545,19.2954545 L9.45454545,12.7045454 C9.45454545,10.9062502 10.9062502,9.45454545 12.7045454,9.45454545 Z M20.2954545,11.0454545 C19.9289774,11.0454545 19.6363636,11.3380684 19.6363636,11.7045454 C19.6363636,12.0710225 19.9289774,12.3636364 20.2954545,12.3636364 C20.6619316,12.3636364 20.9545454,12.0710225 20.9545454,11.7045454 C20.9545454,11.3380684 20.6619316,11.0454545 20.2954545,11.0454545 Z M16,11.6363636 C13.599432,11.6363636 11.6363636,13.599432 11.6363636,16 C11.6363636,18.400568 13.599432,20.3636364 16,20.3636364 C18.400568,20.3636364 20.3636364,18.400568 20.3636364,16 C20.3636364,13.599432 18.400568,11.6363636 16,11.6363636 Z M16,13.0909091 C17.6164771,13.0909091 18.9090909,14.3835229 18.9090909,16 C18.9090909,17.6164771 17.6164771,18.9090909 16,18.9090909 C14.3835229,18.9090909 13.0909091,17.6164771 13.0909091,16 C13.0909091,14.3835229 14.3835229,13.0909091 16,13.0909091 Z"></path><path class="insta-mask-hover_2Yt" style="fill:url(#si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992instagramhover)" d="M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z M12.7045454,8 C10.1221593,8 8,10.1193185 8,12.7045454 L8,19.2954545 C8,21.8778407 10.1193185,24 12.7045454,24 L19.2954545,24 C21.8778407,24 24,21.8806822 24,19.2954545 L24,12.7045454 C24,10.1221593 21.8806822,8 19.2954545,8 L12.7045454,8 Z M12.7045454,9.45454545 L19.2954545,9.45454545 C21.0937498,9.45454545 22.5454545,10.9062502 22.5454545,12.7045454 L22.5454545,19.2954545 C22.5454545,21.0937498 21.0937498,22.5454545 19.2954545,22.5454545 L12.7045454,22.5454545 C10.9062502,22.5454545 9.45454545,21.0937498 9.45454545,19.2954545 L9.45454545,12.7045454 C9.45454545,10.9062502 10.9062502,9.45454545 12.7045454,9.45454545 Z M20.2954545,11.0454545 C19.9289774,11.0454545 19.6363636,11.3380684 19.6363636,11.7045454 C19.6363636,12.0710225 19.9289774,12.3636364 20.2954545,12.3636364 C20.6619316,12.3636364 20.9545454,12.0710225 20.9545454,11.7045454 C20.9545454,11.3380684 20.6619316,11.0454545 20.2954545,11.0454545 Z M16,11.6363636 C13.599432,11.6363636 11.6363636,13.599432 11.6363636,16 C11.6363636,18.400568 13.599432,20.3636364 16,20.3636364 C18.400568,20.3636364 20.3636364,18.400568 20.3636364,16 C20.3636364,13.599432 18.400568,11.6363636 16,11.6363636 Z M16,13.0909091 C17.6164771,13.0909091 18.9090909,14.3835229 18.9090909,16 C18.9090909,17.6164771 17.6164771,18.9090909 16,18.9090909 C14.3835229,18.9090909 13.0909091,17.6164771 13.0909091,16 C13.0909091,14.3835229 14.3835229,13.0909091 16,13.0909091 Z"></path></g><path d="M5,1 C2.790861,1 1,2.790861 1,5 L1,27 C1,29.209139 2.790861,31 5,31 L27,31 C29.209139,31 31,29.209139 31,27 L31,5 C31,2.790861 29.209139,1 27,1 L5,1 Z M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z" class="border_2yy"></path><g><path class="logo_2gS" style="fill:#333333;color:#333333" d="M12.7045454,8 C10.1221593,8 8,10.1193185 8,12.7045454 L8,19.2954545 C8,21.8778407 10.1193185,24 12.7045454,24 L19.2954545,24 C21.8778407,24 24,21.8806822 24,19.2954545 L24,12.7045454 C24,10.1221593 21.8806822,8 19.2954545,8 L12.7045454,8 Z M12.7045454,9.45454545 L19.2954545,9.45454545 C21.0937498,9.45454545 22.5454545,10.9062502 22.5454545,12.7045454 L22.5454545,19.2954545 C22.5454545,21.0937498 21.0937498,22.5454545 19.2954545,22.5454545 L12.7045454,22.5454545 C10.9062502,22.5454545 9.45454545,21.0937498 9.45454545,19.2954545 L9.45454545,12.7045454 C9.45454545,10.9062502 10.9062502,9.45454545 12.7045454,9.45454545 Z M20.2954545,11.0454545 C19.9289774,11.0454545 19.6363636,11.3380684 19.6363636,11.7045454 C19.6363636,12.0710225 19.9289774,12.3636364 20.2954545,12.3636364 C20.6619316,12.3636364 20.9545454,12.0710225 20.9545454,11.7045454 C20.9545454,11.3380684 20.6619316,11.0454545 20.2954545,11.0454545 Z M16,11.6363636 C13.599432,11.6363636 11.6363636,13.599432 11.6363636,16 C11.6363636,18.400568 13.599432,20.3636364 16,20.3636364 C18.400568,20.3636364 20.3636364,18.400568 20.3636364,16 C20.3636364,13.599432 18.400568,11.6363636 16,11.6363636 Z M16,13.0909091 C17.6164771,13.0909091 18.9090909,14.3835229 18.9090909,16 C18.9090909,17.6164771 17.6164771,18.9090909 16,18.9090909 C14.3835229,18.9090909 13.0909091,17.6164771 13.0909091,16 C13.0909091,14.3835229 14.3835229,13.0909091 16,13.0909091 Z"></path><path class="insta-mask-logo-hover_19f" style="fill:#333333;color:#333333" d="M12.7045454,8 C10.1221593,8 8,10.1193185 8,12.7045454 L8,19.2954545 C8,21.8778407 10.1193185,24 12.7045454,24 L19.2954545,24 C21.8778407,24 24,21.8806822 24,19.2954545 L24,12.7045454 C24,10.1221593 21.8806822,8 19.2954545,8 L12.7045454,8 Z M12.7045454,9.45454545 L19.2954545,9.45454545 C21.0937498,9.45454545 22.5454545,10.9062502 22.5454545,12.7045454 L22.5454545,19.2954545 C22.5454545,21.0937498 21.0937498,22.5454545 19.2954545,22.5454545 L12.7045454,22.5454545 C10.9062502,22.5454545 9.45454545,21.0937498 9.45454545,19.2954545 L9.45454545,12.7045454 C9.45454545,10.9062502 10.9062502,9.45454545 12.7045454,9.45454545 Z M20.2954545,11.0454545 C19.9289774,11.0454545 19.6363636,11.3380684 19.6363636,11.7045454 C19.6363636,12.0710225 19.9289774,12.3636364 20.2954545,12.3636364 C20.6619316,12.3636364 20.9545454,12.0710225 20.9545454,11.7045454 C20.9545454,11.3380684 20.6619316,11.0454545 20.2954545,11.0454545 Z M16,11.6363636 C13.599432,11.6363636 11.6363636,13.599432 11.6363636,16 C11.6363636,18.400568 13.599432,20.3636364 16,20.3636364 C18.400568,20.3636364 20.3636364,18.400568 20.3636364,16 C20.3636364,13.599432 18.400568,11.6363636 16,11.6363636 Z M16,13.0909091 C17.6164771,13.0909091 18.9090909,14.3835229 18.9090909,16 C18.9090909,17.6164771 17.6164771,18.9090909 16,18.9090909 C14.3835229,18.9090909 13.0909091,17.6164771 13.0909091,16 C13.0909091,14.3835229 14.3835229,13.0909091 16,13.0909091 Z"></path></g></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/" class="ytube">
+                                <svg class="si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992 svgIcon_1J7 filled_Qbi darkTheme_3jZ" viewBox="0 0 32 32" style="border-radius:4px"><path class="outer_bDW" d="M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z M24.8319297,11.4874563 C24.6803369,10.1603684 24.3639692,9.77357894 24.1398754,9.59352174 C23.7839619,9.31343284 23.1380446,9.21340113 22.2746246,9.15338207 C20.8905163,9.06001905 18.537532,9 16,9 C13.455877,9 11.1094837,9.05335028 9.72537529,9.15338207 C8.86195533,9.21340113 8.21603808,9.31343284 7.8601245,9.59352174 C7.63603076,9.77357894 7.32625412,10.1603684 7.1680703,11.4874563 C6.94397657,13.4013973 6.94397657,17.7627818 7.1680703,19.6767227 C7.32625412,21.0038107 7.63603076,21.3906002 7.8601245,21.5706573 C8.21603808,21.8507463 8.86195533,21.950778 9.72537529,22.0107971 C11.1094837,22.1041601 13.455877,22.164179 16,22.164179 C18.544123,22.164179 20.8905163,22.1041601 22.2746246,22.0107971 C23.1380446,21.950778 23.7839619,21.8507463 24.1398754,21.5706573 C24.3639692,21.3972689 24.6737458,21.0038107 24.8319297,19.6767227 C25.0560234,17.7627818 25.0560234,13.4013973 24.8319297,11.4874563 Z M13.8249725,18.4429978 L13.8249725,12.7145125 L19.2559502,15.5754208 L13.8249725,18.4429978 Z"></path><path d="M5,1 C2.790861,1 1,2.790861 1,5 L1,27 C1,29.209139 2.790861,31 5,31 L27,31 C29.209139,31 31,29.209139 31,27 L31,5 C31,2.790861 29.209139,1 27,1 L5,1 Z M5,0 L27,0 C29.7614237,-5.07265313e-16 32,2.23857625 32,5 L32,27 C32,29.7614237 29.7614237,32 27,32 L5,32 C2.23857625,32 3.38176876e-16,29.7614237 0,27 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z" class="border_2yy"></path><path class="logo_2gS" d="M24.8319297,11.4874563 C24.6803369,10.1603684 24.3639692,9.77357894 24.1398754,9.59352174 C23.7839619,9.31343284 23.1380446,9.21340113 22.2746246,9.15338207 C20.8905163,9.06001905 18.537532,9 16,9 C13.455877,9 11.1094837,9.05335028 9.72537529,9.15338207 C8.86195533,9.21340113 8.21603808,9.31343284 7.8601245,9.59352174 C7.63603076,9.77357894 7.32625412,10.1603684 7.1680703,11.4874563 C6.94397657,13.4013973 6.94397657,17.7627818 7.1680703,19.6767227 C7.32625412,21.0038107 7.63603076,21.3906002 7.8601245,21.5706573 C8.21603808,21.8507463 8.86195533,21.950778 9.72537529,22.0107971 C11.1094837,22.1041601 13.455877,22.164179 16,22.164179 C18.544123,22.164179 20.8905163,22.1041601 22.2746246,22.0107971 C23.1380446,21.950778 23.7839619,21.8507463 24.1398754,21.5706573 C24.3639692,21.3972689 24.6737458,21.0038107 24.8319297,19.6767227 C25.0560234,17.7627818 25.0560234,13.4013973 24.8319297,11.4874563 Z M13.8249725,18.4429978 L13.8249725,12.7145125 L19.2559502,15.5754208 L13.8249725,18.4429978 Z" style="color:#333333;fill:#333333"></path></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form action="https://formspree.io/f/mvodqjao" method="POST" class="footer-sub">
+                    <p class="text">Join our newsletter for $30 off</p>
+                    <input type="email" name="email" placeholder="Email*">
+                    <input type="submit" value="SUBSCRIBE" class="button green-button">
+                </form>
             </div>
-            <div class="footer-menu">
-                <a href="#promotions">Promotions</a>
-                <a href="#best-selling">Best-selling</a>
-                <a href="#products">2020 Collection</a>
-                <a href="#promotions">Testimonials</a>
-                <a href="#">Blog</a>
-                <a href="#contacts">Contact us</a>
-                <a href="#products" class="button outline-button ">Shop now</a>
+            <div class="copyright">
+                <p>&#169; Created by</p>
+                <p>All rights Reserved</p>
             </div>
-            <div>
-                <p>Follow Us</p>
-                <ul class="social">
-                    <li><a href="https://facebook.com/" class="fb">Facebook</a></li>
-                    <li><a href="https://instagram.com/" class="insta">Instagram</a></li>
-                    <li><a href="https://youtube.com/" class="ytube">Youtube</a></li>
-                </ul>
-            </div>
-            <form action="https://formspree.io/f/mvodqjao" method="POST">
-                <p>Join our newsletter for $30 off</p>
-                <input type="email" name="email" placeholder="Email*">
-                <input type="submit" value="SUBSCRIBE">
-            </form>
-        </div>
-        <div>
-            <p>&#169; Created by</p>
-            <p>All rights Reserved</p>
         </div>  
     </footer>
 </body>
