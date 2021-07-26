@@ -715,6 +715,7 @@ button,
   padding: 50px 0 80px;
   overflow: hidden;
   display: flex;
+  justify-content: center;
 }
 .brands img {
   padding-right: 15px;
