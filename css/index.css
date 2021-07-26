@@ -618,26 +618,38 @@ button,
 #products .section-subtitle {
   text-align: left;
 }
-.tab-title {
+.tab-titles {
   margin-top: 45px;
   display: flex;
   overflow: hidden;
+  position: relative;
 }
-/* .tab-title {
+/* .tab-titles {
     margin-top: 50px;
     display: flex;
     border-bottom: 1px solid lightgrey;
 } */
-.tab-title p {
+.tab-titles::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  opacity: 0.125;
+  position: absolute;
+  bottom: 0;
+}
+.tab-titles p {
   padding: 15px 20px;
   font-size: 18px;
   line-height: 1.56;
   box-sizing: border-box;
   color: #333;
-  border-bottom: 1px solid lightgrey;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
-.tab-title p.active {
+.tab-titles p.active {
+  opacity: 1;
   border-bottom: 2px solid #7bb57c;
 }
 .tab-items {
@@ -692,13 +704,21 @@ button,
   margin-top: 8px;
 }
 
-.tab-items:not(:first-of-type) {
+.tab-items {
   display: none;
 }
+.tab-items.active {
+  display: grid;
+}
+
 .brands {
   padding: 50px 0 80px;
   overflow: hidden;
-  padding: 0 15px;
+  display: flex;
+}
+.brands img {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .brands img:not(.show) {
   display: none;
@@ -886,9 +906,9 @@ section.details {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
-  padding: 20px 35px 20px 0;
-  border-bottom: 1px solid lightgray;
+  padding-right: 35px;
   position: relative;
+  cursor: pointer;
 }
 .about-us h3::after {
   content: '';
@@ -901,10 +921,24 @@ section.details {
   background-image: url(../img/res/accordion-icon.svg);
   background-repeat: no-repeat;
 }
-.about-us .detail p {
+.about-us .detail {
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+}
+.about-us .detail .text {
+  color: #858585;
+  font-size: 14px;
+  line-height: 1.6;
   display: none;
+  margin-top: 25px;
 }
 
+.about-us .active + .text {
+  display: block;
+}
+.about-us h3.active::after {
+  transform: rotate(0.5turn);
+}
 .details .video {
   min-height: 322px;
   overflow: hidden;
