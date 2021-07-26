@@ -154,7 +154,8 @@ nav.active .burger-button span {
   display: flex;
   overflow-y: auto;
   margin-top: -10px;
-  z-index: -5;
+  /* z-index: -5; */
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -174,6 +175,7 @@ nav.active .burger-button span {
   left: 0;
 }
 .main-header nav.active .menu {
+  display: flex;
   z-index: 4;
 
   /* margin-right: auto;
