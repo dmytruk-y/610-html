@@ -52,7 +52,7 @@ function brandsCarousel() {
   else slideSize = 33.333;
   slideTo * slideSize < slideSize * brands.length - 100 ? slideTo++ : slideTo = 0;
   console.log(slideTo*slideSize);
-  brandsRow.style.left = `-$(currentSlidePos*slideTo)%`;
+  brandsRow.style.left = `-$(slideTo*slideSize)%`;
   console.log(brandsRow.style.left);
   console.log(brandsRow.style.position);
 }
