@@ -781,9 +781,9 @@ button,
 }
 .brands-wrapper {
   position: relative;
-  left: -100%;
+  left: 0;
   overflow: visible;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .brands {
   padding: 50px 0 80px;
