@@ -39,6 +39,7 @@ function onTabChange(event) {
   }
 }
 
+// carousel
 const brandsRow = document.querySelector('.brands-wrapper');
 const brands = document.querySelectorAll('.brands .brand-img');
 console.log(brands.length);
@@ -57,6 +58,7 @@ function brandsCarousel() {
 }
 brandsRow.addEventListener('click', brandsCarousel);
 document.body.addEventListener('resize', brandsCarousel);
+// carousel end
 
 const detailsTitles = document.querySelectorAll('.about-us .detail h3');
 
