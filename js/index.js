@@ -39,8 +39,24 @@ function onTabChange(event) {
   }
 }
 
-const brands = document.querySelectorAll('.brands img');
-// brands carousel
+const brandsRow = document.querySelector('.brands-wrapper');
+const brands = document.querySelectorAll('.brands .brand-img');
+console.log(brands.length);
+console.log(brandsRow.style);
+let slideTo = 0;
+function brandsCarousel() {
+  let slideSize;
+  if (document.documentElement.clientWidth < 480) slideSize = 100;
+  else if (document.documentElement.clientWidth < 768) slideSize = 50;
+  else slideSize = 33.333;
+  slideTo * slideSize < slideSize * brands.length - 100 ? slideTo++ : slideTo = 0;
+  console.log(slideTo*slideSize);
+  brandsRow.style.left = `-$(currentSlidePos*slideTo)%`;
+  console.log(brandsRow.style.left);
+  console.log(brandsRow.style.position);
+}
+brandsRow.addEventListener('click', brandsCarousel);
+document.body.addEventListener('resize', brandsCarousel);
 
 const detailsTitles = document.querySelectorAll('.about-us .detail h3');
 
@@ -56,3 +72,5 @@ function showDetail(event) {
   }
   event.target.classList.add('active');
 }
+
+

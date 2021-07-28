@@ -20,7 +20,7 @@
             <a href="#promotions" class="menu-item">Promotions</a>
             <a href="#best-selling" class="menu-item">Best-selling</a>
             <a href="#products" class="menu-item">2020 Collection</a>
-            <a href="#promotions" class="menu-item">Testimonials</a>
+            <a href="#testimonials" class="menu-item">Testimonials</a>
             <a href="#" class="menu-item">Blog</a>
             <a href="#contacts" class="menu-item">Contact us</a>
             <a href="#products" class="button outline-button">Shop now</a>
@@ -138,7 +138,7 @@
           <p class="tab-title lamps">Lamps</p>
           <p class="tab-title tables">Tables</p>
         </div>
-        <ul class="tab-items armchairs">
+        <ul class="tab-items armchairs active">
           <li class="shop-item">
             <a href="#" class="item"
               ><img src="img/shop-items/armchairs/fusion-armchair.png" alt="Fusion armchair"
@@ -179,30 +179,30 @@
             <a href="#"
               ><img src="img/shop-items/lamps/3-piece-minimal.png" alt="3-piece Minimal lamp"
             /></a>
-            <h3 class="shop-item"><a href="#">3-piece Minimal, ARM</a></h3>
+            <h3 class="product-title"><a href="#">3-piece Minimal, ARM</a></h3>
             <p class="price">110,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
             <a href="#"><img src="img/shop-items/lamps/red-drops.png" alt="Red Drops lamp" /></a>
-            <h3 class="shop-item"><a href="#">Red Drops, KUKO</a></h3>
+            <h3 class="product-title"><a href="#">Red Drops, KUKO</a></h3>
             <p class="price">210,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
             <a href="#"><img src="img/shop-items/lamps/delar.png" alt="Delar lamp" /></a>
-            <h3 class="shop-item"><a href="#">Delar, Uni Studio</a></h3>
+            <h3 class="product-title"><a href="#">Delar, Uni Studio</a></h3>
             <p class="price">350,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
             <a href="#"><img src="img/shop-items/lamps/bubbles.png" alt="Bubbles lamp" /></a>
-            <h3 class="shop-item"><a href="#">Bubbles, Udion</a></h3>
+            <h3 class="product-title"><a href="#">Bubbles, Udion</a></h3>
             <p class="price">410,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
         </ul>
-        <ul class="tab-items tables active">
+        <ul class="tab-items tables">
           <li class="shop-item">
             <a href="#"><img src="img/shop-items/tables/upi-table.png" alt="Upi table" /></a>
             <h3 class="product-title"><a href="#">Upi table, Landstrom</a></h3>
@@ -233,17 +233,22 @@
           </li>
         </ul>
       </section>
-      <div class="container">
-        <div class="brands">
-          <img src="img/brands/idea.webp" class="show" alt="iDEA" draggable="false" />
-          <img src="img/brands/artvan.webp" alt="Art Van" draggable="false" />
-          <img src="img/brands/ikea.webp" alt="IKEA" draggable="false" />
-          <img src="img/brands/vitra.webp" alt="Vitra" draggable="false" />
-          <img src="img/brands/walmart.webp" alt="Walmart" draggable="false" />
-          <img src="img/brands/kronheims.webp" alt="Kronheims" draggable="false" />
-          <img src="img/brands/seamans.webp" alt="Seaman's" draggable="false" />
+      <div class="container carousel-ovf-hidden">
+        <div class="brands-wrapper">
+          <div class="brands">
+            <div class="brand-img">
+              <img src="img/brands/idea.webp" alt="iDEA" draggable="false" />
+            </div>
+            
+            <div class="brand-img"><img src="img/brands/artvan.webp" alt="Art Van" draggable="false" /></div>
+            <div class="brand-img"><img src="img/brands/ikea.webp" alt="IKEA" draggable="false" /></div>
+            <div class="brand-img"><img src="img/brands/vitra.webp" alt="Vitra" draggable="false" /></div>
+            <div class="brand-img"><img src="img/brands/walmart.webp" alt="Walmart" draggable="false" /></div>
+            <div class="brand-img"><img src="img/brands/kronheims.webp" alt="Kronheims" draggable="false" /></div>
+            <div class="brand-img"><img src="img/brands/seamans.webp" alt="Seaman's" draggable="false" /></div>
+          </div>
         </div>
-      </div>
+        </div>
       <section class="top-brands">
         <div class="wrapper">
           <div class="content">
@@ -257,7 +262,7 @@
             </p>
             <a href="#" class="button outline-button arrow">SHOP KUKO</a>
           </div>
-          <img src="img/colorful-by-kuko.webp" alt="Yellow sofa by KUKO" />
+          <div class="content-img"><img src="img/colorful-by-kuko.webp" alt="Yellow sofa by KUKO" /></div>
         </div>
         <div class="wrapper">
           <div class="content">
@@ -271,75 +276,88 @@
             </p>
             <a href="#" class="button outline-button arrow">SHOP LANDSTROM</a>
           </div>
-          <img src="img/classics-by-landstrom.webp" alt="Minimalist furnitureby Landstrom Design" />
+          <div class="content-img"><img src="img/classics-by-landstrom.webp" alt="Minimalist furnitureby Landstrom Design" /></div>
         </div>
       </section>
       <section id="testimonials">
         <div class="container">
           <h2 class="section-title">What Our Customers Say</h2>
           <p class="section-subtitle">We love your feedback on our products!</p>
-          <ul class="reviews">
-            <li class="card">
-              <img src="img/customers-img/judy-peterson.webp" alt="Judy's profile picture" />
-              <p class="name">Judy Peterson</p>
-              <p class="city">New York</p>
-              <p class="message">
-                I'm very pleased with our new sofa! It fits perfectly into the interior. The
-                assemblage of the furniture was super fast!
-              </p>
-              <p class="time">
-                <time datetime="2018-10-28">October 28, 2018</time>
-              </p>
-            </li>
-            <li class="card">
-              <img src="img/customers-img/kyle-hudson.webp" alt="Kyle's profile picture" />
-              <p class="name">Kyle Hudson</p>
-              <p class="city">Houston</p>
-              <p class="message">
-                Thank you for helping me choose new armchairs in the living room. They look great
-                and fit perfectly into my interior.
-              </p>
-              <p class="time">
-                <time datetime="2019-06-13">June 13, 2019</time>
-              </p>
-            </li>
-            <li class="card">
-              <img src="img/customers-img/hanna-levy.webp" alt="Hanna's profile picture" />
-              <p class="name">Hanna Levy</p>
-              <p class="city">Boston</p>
-              <p class="message">
-                Next-day delivery surprised me a lot! I thought I would have to wait for weeks!
-                Thank you for the quick processing of my order!
-              </p>
-              <p class="time">
-                <time datetime="2019-10-04">October 04, 2019</time>
-              </p>
-            </li>
-            <li class="card">
-              <img src="img/customers-img/jim-mockeen.webp" alt="Jim's profile picture" />
-              <p class="name">Jim Mockeen</p>
-              <p class="city">Chicago</p>
-              <p class="message">
-                I not only found the perfect sofa at a reasonable price but also stylish lamps which
-                were exactly what I wanted. Thank you, SOFA!
-              </p>
-              <p class="time">
-                <time datetime="2020-01-18">January 18, 2020</time>
-              </p>
-            </li>
-            <li class="card">
-              <img src="img/customers-img/karen-morning.webp" alt="Karen's profile picture" />
-              <p class="name">Karen Morning</p>
-              <p class="city">Washington</p>
-              <p class="message">
-                My order arrived really quickly and I was amazed by the quality - PERFECT. I would
-                and have recommended SOFA to others.
-              </p>
-              <p class="time">
-                <time datetime="2020-02-03">February 03, 2020</time>
-              </p>
-            </li>
-          </ul>
+          <div class="carousel-ovf-hidden">
+            <ul class="reviews">
+              <li class="review-wrapper">
+                <div class="card">
+                  <img src="img/customers-img/judy-peterson.webp" alt="Judy's profile picture" />
+                  <p class="name">Judy Peterson</p>
+                  <p class="city">New York</p>
+                  <p class="message">
+                    I'm very pleased with our new sofa! It fits perfectly into the interior. The
+                    assemblage of the furniture was super fast!
+                  </p>
+                  <p class="time">
+                    <time datetime="2018-10-28">October 28, 2018</time>
+                  </p>
+                </div>
+              </li>
+              <li class="review-wrapper">
+                <div class="card">
+                  <img src="img/customers-img/kyle-hudson.webp" alt="Kyle's profile picture" />
+                  <p class="name">Kyle Hudson</p>
+                  <p class="city">Houston</p>
+                  <p class="message">
+                    Thank you for helping me choose new armchairs in the living room. They look great
+                    and fit perfectly into my interior.
+                  </p>
+                  <p class="time">
+                    <time datetime="2019-06-13">June 13, 2019</time>
+                  </p>
+                </div>
+              </li>
+            
+              <li class="review-wrapper">
+                <div class="card">
+                  <img src="img/customers-img/hanna-levy.webp" alt="Hanna's profile picture" />
+                  <p class="name">Hanna Levy</p>
+                  <p class="city">Boston</p>
+                  <p class="message">
+                    Next-day delivery surprised me a lot! I thought I would have to wait for weeks!
+                    Thank you for the quick processing of my order!
+                  </p>
+                  <p class="time">
+                    <time datetime="2019-10-04">October 04, 2019</time>
+                  </p>
+                </div>
+              </li>
+              <li class="review-wrapper">
+                <div class="card">
+                  <img src="img/customers-img/jim-mockeen.webp" alt="Jim's profile picture" />
+                  <p class="name">Jim Mockeen</p>
+                  <p class="city">Chicago</p>
+                  <p class="message">
+                    I not only found the perfect sofa at a reasonable price but also stylish lamps which
+                    were exactly what I wanted. Thank you, SOFA!
+                  </p>
+                  <p class="time">
+                    <time datetime="2020-01-18">January 18, 2020</time>
+                  </p>
+                </div>
+              </li>
+              <li class="review-wrapper">
+                <div class="card">
+                  <img src="img/customers-img/karen-morning.webp" alt="Karen's profile picture" />
+                  <p class="name">Karen Morning</p>
+                  <p class="city">Washington</p>
+                  <p class="message">
+                    My order arrived really quickly and I was amazed by the quality - PERFECT. I would
+                    and have recommended SOFA to others.
+                  </p>
+                  <p class="time">
+                    <time datetime="2020-02-03">February 03, 2020</time>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="container details">
@@ -485,7 +503,7 @@
             <a href="#promotions">Promotions</a>
             <a href="#best-selling">Best-selling</a>
             <a href="#products">2020 Collection</a>
-            <a href="#promotions">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#">Blog</a>
             <a href="#contacts">Contact us</a>
           </div>
