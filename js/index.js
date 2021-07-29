@@ -40,25 +40,76 @@ function onTabChange(event) {
 }
 
 // carousel
-const brandsRow = document.querySelector('.brands-wrapper');
-const brands = document.querySelectorAll('.brands .brand-img');
-console.log(brands.length);
-console.log(brandsRow.style);
-let slideTo = 0;
-function brandsCarousel() {
-  let slideSize;
-  if (document.documentElement.clientWidth < 480) slideSize = 100;
-  else if (document.documentElement.clientWidth < 768) slideSize = 50;
-  else slideSize = 33.333;
-  slideTo * slideSize < slideSize * brands.length - 100 ? slideTo++ : slideTo = 0;
-  console.log(slideTo*slideSize);
-  brandsRow.style.left = `-$(slideTo*slideSize)%`;
-  console.log(brandsRow.style.left);
-  console.log(brandsRow.style.position);
+function carousel (carouselTarget, carouselItems, dots) {
+  let slideToShow = 0;
+  return function (event) {
+    const slideWidth = carouselItems[0].clientWidth;
+    const carouselWidth = carouselTarget.clientWidth;
+    const slidesOnScreen = Math.round(carouselWidth / slideWidth);
+    const lastIndexToShow = carouselItems.length - slidesOnScreen;
+    
+    if (event === 'resize') {
+      if (slideToShow === 0) return;
+      if (slideToShow > lastIndexToShow) {
+        slideToShow = lastIndexToShow;
+      }
+      carouselTarget.style.transform = `translateX(-${slideToShow * slideWidth}px)`;
+      if (dots) {
+        dots.forEach((elem) => elem.classList.remove('active-slider-dot'));
+        dots[slideToShow].classList.add('active-slider-dot');
+      }
+      return;
+    }
+
+    if (event === 'next' && slideToShow < lastIndexToShow) {
+      slideToShow++;
+    } else if (event === 'prev' && slideToShow > 0) {
+      slideToShow--;
+    }
+    carouselTarget.style.transform = `translateX(-${slideToShow * slideWidth}px)`;
+    if (dots) {
+      dots.forEach((elem) => elem.classList.remove('active-slider-dot'));
+      dots[slideToShow].classList.add('active-slider-dot');
+    }
+  }
 }
-brandsRow.addEventListener('click', brandsCarousel);
-document.body.addEventListener('resize', brandsCarousel);
-// carousel end
+// brandsCarousel
+const brands = document.querySelector('.brands');
+const brandsItems = document.querySelectorAll('.brands .brand-img');
+const brandsCarousel = carousel(brands, brandsItems);
+document.querySelector('.brands-wrapper .prev-btn').addEventListener('click', () => brandsCarousel('prev'));
+document.querySelector('.brands-wrapper .next-btn').addEventListener('click', () => {
+  brandsCarousel('next');
+});
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    brandsCarousel('resize');
+  }, 100);
+});
+// brandsCarousel end
+
+// testimonialsCarousel
+const testimonials = document.querySelector('.reviews');
+const testimonialsItems = document.querySelectorAll('.reviews .review-wrapper');
+const testimonialsDots = document.querySelectorAll('#testimonials .slider-dot')
+console.log(testimonialsDots)
+const testimonialsCarousel = carousel(testimonials, testimonialsItems, testimonialsDots);
+document.querySelector('.reviews-wrapper .prev-btn').addEventListener('click', () => {
+  testimonialsCarousel('prev');
+});
+document.querySelector('.reviews-wrapper .next-btn').addEventListener('click', () => {
+  testimonialsCarousel('next');
+});
+let resizeTimerTestimonials;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimerTestimonials);
+  resizeTimer = setTimeout(() => {
+    testimonialsCarousel('resize');
+  }, 100);
+});
+// testimonialsCarousel end
 
 const detailsTitles = document.querySelectorAll('.about-us .detail h3');
 
