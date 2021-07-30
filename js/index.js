@@ -116,27 +116,6 @@ const detailsTitles = document.querySelectorAll('.about-us .detail h3');
 
 detailsTitles.forEach((item) => item.addEventListener('click', showDetail));
 
-// function showDetail(event) {
-//   const panel = event.target.nextElementSibling;
-
-//   if (event.target.classList.contains('active')) {
-//     event.target.classList.remove('active');
-//     panel.style.marginTop = null;
-//       panel.style.maxHeight = null;
-//     return;
-//   }
-//   for (const title of detailsTitles) {
-//     title.classList.remove('active');
-//   }
-//   event.target.classList.add('active');
-//   if (panel.style.maxHeight) {
-//     panel.style.marginTop = null;
-//     panel.style.maxHeight = null;
-//   } else {
-//     panel.style.marginTop = '25' + 'px';
-//     panel.style.maxHeight = panel.scrollHeight + "px";
-//   }
-// }
 function showDetail() {
   if (this.classList.contains('active')) {
     this.classList.remove('active');
