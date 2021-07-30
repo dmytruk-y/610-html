@@ -1,3 +1,4 @@
+'use strict'
 function showMenu() {
   document.body.classList.toggle('lock');
   menu.classList.toggle('active');
@@ -115,15 +116,54 @@ const detailsTitles = document.querySelectorAll('.about-us .detail h3');
 
 detailsTitles.forEach((item) => item.addEventListener('click', showDetail));
 
-function showDetail(event) {
-  if (event.target.classList.contains('active')) {
-    event.target.classList.remove('active');
+// function showDetail(event) {
+//   const panel = event.target.nextElementSibling;
+
+//   if (event.target.classList.contains('active')) {
+//     event.target.classList.remove('active');
+//     panel.style.marginTop = null;
+//       panel.style.maxHeight = null;
+//     return;
+//   }
+//   for (const title of detailsTitles) {
+//     title.classList.remove('active');
+//   }
+//   event.target.classList.add('active');
+//   if (panel.style.maxHeight) {
+//     panel.style.marginTop = null;
+//     panel.style.maxHeight = null;
+//   } else {
+//     panel.style.marginTop = '25' + 'px';
+//     panel.style.maxHeight = panel.scrollHeight + "px";
+//   }
+// }
+function showDetail() {
+  if (this.classList.contains('active')) {
+    this.classList.remove('active');
+    hidePanelOfElement(this);
     return;
   }
+
   for (const title of detailsTitles) {
-    title.classList.remove('active');
+    if (title.classList.contains('active')) {
+      title.classList.remove('active');
+      hidePanelOfElement(title);
+    }
   }
-  event.target.classList.add('active');
+
+  this.classList.add('active');
+  showPanelOfElement(this);
+
+  function hidePanelOfElement(element) {
+    const panel = element.nextElementSibling;
+    panel.style.marginTop = null;
+    panel.style.maxHeight = null;
+  }
+  function showPanelOfElement(element) {
+    const panel = element.nextElementSibling;
+    panel.style.marginTop = '25' + 'px';
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
 }
 
 
