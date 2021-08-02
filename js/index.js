@@ -1,20 +1,27 @@
-'use strict'
+'use strict';
 function showMenu() {
-  document.body.classList.toggle('lock');
-  menu.classList.toggle('active');
+  document.body.classList.toggle('body-lock');
+  menu.classList.toggle('burger-active');
 }
+
 const menu = document.querySelector('.main-header nav');
 
 const menuButton = document.querySelector('.burger-button');
 menuButton.addEventListener('click', showMenu);
+menuButton.addEventListener('keypress', (event) => {
+        if(event.key === ' ' || event.key === 'Enter') {
+            event.preventDefault();
+            showMenu();
+        }
+    });
 
 const menuLinks = document.querySelectorAll('.main-header .menu a');
 menuLinks.forEach((link) => link.addEventListener('click', onMenuClick));
 
 function onMenuClick() {
-  if (menu.classList.contains('active')) {
-    document.body.classList.remove('lock');
-    menu.classList.remove('active');
+  if (menu.classList.contains('burger-active')) {
+    document.body.classList.remove('body-lock');
+    menu.classList.remove('burger-active');
   }
 }
 
@@ -95,7 +102,6 @@ window.addEventListener('resize', () => {
 const testimonials = document.querySelector('.reviews');
 const testimonialsItems = document.querySelectorAll('.reviews .review-wrapper');
 const testimonialsDots = document.querySelectorAll('#testimonials .slider-dot')
-console.log(testimonialsDots)
 const testimonialsCarousel = carousel(testimonials, testimonialsItems, testimonialsDots);
 document.querySelector('.reviews-wrapper .prev-btn').addEventListener('click', () => {
   testimonialsCarousel('prev');

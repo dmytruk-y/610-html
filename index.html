@@ -10,11 +10,11 @@
 
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container header-container">
         <nav>
           <div class="burger">
             <a href="#" class="logo"><img src="img/logo.webp" alt="SOFA" /></a>
-            <div class="burger-button"><span></span></div>
+            <div class="burger-button" tabindex="0"><span></span></div>
           </div>
           <div class="menu">
             <a href="#promotions" class="menu-item">Promotions</a>
@@ -30,7 +30,14 @@
           <div class="header-text">
             <h1 class="heading"><span class="highlight">Furniture</span> for Home & Office</h1>
             <p class="subtitle">500+ models of cushioned furniture, lamps and accessories.</p>
-            <a href="#best-selling" class="button green-button arrow">Best-selling products</a>
+            <a href="#best-selling" class="button green-button button-shadow">
+              Best-selling products
+              <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                .cls-1 {
+                  fill-rule: evenodd;
+                }
+              </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -41,22 +48,46 @@
           <div class="promo-img">
             <img src="img/15off.webp" alt="Tables & Cabinets" />
           </div>
-          <h3><span class="highlight">15% off</span> on Tables & Cabinets</h3>
-          <a href="#" class="button transparent-button arrow">Learn more</a>
+          <h3 class="promo-title"><span class="highlight">15% off</span> on Tables & Cabinets</h3>
+          <a href="#" class="button transparent-button">
+            Learn more
+            <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+              .cls-1 {
+                fill-rule: evenodd;
+              }
+            </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+
+          </a>
         </div>
         <div class="promo">
           <div class="promo-img">
             <img src="img/all-white.webp" alt="White furniture" />
           </div>
-          <h3>All-White Collection in Store</h3>
-          <a href="#" class="button transparent-button arrow">Learn more</a>
+          <h3 class="promo-title">All-White Collection in Store</h3>
+          <a href="#" class="button transparent-button">
+            Learn more
+            <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+              .cls-1 {
+                fill-rule: evenodd;
+              }
+            </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+
+          </a>
         </div>
         <div class="promo">
           <div class="promo-img">
             <img src="img/ARM-collection.webp" alt="New by ARM" />
           </div>
-          <h3><span class="highlight">NEW!</span> Modern Collection by ARM</h3>
-          <a href="#" class="button transparent-button arrow">Learn more</a>
+          <h3 class="promo-title"><span class="highlight">NEW!</span> Modern Collection by ARM</h3>
+          <a href="#" class="button transparent-button">
+            Learn more
+            <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+              .cls-1 {
+                fill-rule: evenodd;
+              }
+            </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+
+          </a>
         </div>
       </section>
       <div class="banner">
@@ -69,34 +100,34 @@
         <p class="subtitle">Our customers' faves of the week</p>
         <ul class="best-selling-list">
           <li class="shop-item">
-            <a href="#" class="best-selling-img"
+            <a href="#" class="shop-item-img best-selling-img text"
               ><img src="img/shop-items/lord-armchair.png" alt="Lord armchair"
             /></a>
             <h3 class="product-title">
               <a href="#">Lord armchair, Miedel Home</a>
             </h3>
             <p class="price">120,00USD</p>
-            <button type="button" class="green-button">Order now</button>
+            <button type="button" class="green-button button-shadow">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#" class="best-selling-img"
+            <a href="#" class="shop-item-img best-selling-img text"
               ><img src="img/shop-items/ultimate-green-chair.png" alt="Ultimate Green chair"
             /></a>
             <h3 class="product-title">
               <a href="#">Ultimate Green chair, XODO</a>
             </h3>
             <p class="price">90,00USD</p>
-            <button type="button" class="green-button">Order now</button>
+            <button type="button" class="green-button button-shadow">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#" class="best-selling-img"
+            <a href="#" class="shop-item-img best-selling-img text"
               ><img src="img/shop-items/valetta-armchair.png" alt="Valetta armchair"
             /></a>
             <h3 class="product-title">
               <a href="#">Valetta armchair, ZIX studio</a>
             </h3>
             <p class="price">310,00USD</p>
-            <button type="button" class="green-button">Order now</button>
+            <button type="button" class="green-button button-shadow">Order now</button>
           </li>
         </ul>
       </section>
@@ -108,28 +139,49 @@
               Best styles for your home or office in the most trending colors of 2020. Shop
               cushioned furniture, lamps, coffee tables and accessories here.
             </p>
-            <a href="#products" class="button green-button arrow">Our faves</a>
+            <a href="#products" class="button green-button button-shadow">
+              Our faves
+              <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                .cls-1 {
+                  fill-rule: evenodd;
+                }
+              </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+            </a>
           </div>
         </div>
       </section>
       <ul class="collections container">
-        <li class="collections-article">
+        <li class="collections-article collections-article-light">
           <h3>Bring brightness to the interior</h3>
           <p class="title">Get 15% off on colorful 2020 furniture collections.</p>
           <p class="text">
             Set bright accents in your interior.<br />
             Shop the collections of selected designers.
           </p>
-          <a href="#" class="button green-button arrow">Learn more</a>
+          <a href="#" class="button green-button button-shadow">
+            Learn more
+            <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+              .cls-1 {
+                fill-rule: evenodd;
+              }
+            </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+          </a>
         </li>
-        <li class="collections-article">
+        <li class="collections-article collections-article-dark">
           <h3>Black & white are always in trend</h3>
           <p class="title">Only black and white furniture collections. Nothing extra.</p>
           <p class="text">
             Top models of furniture & lamps.<br />
             Find your inspiration in our B&W collections.
           </p>
-          <a href="#" class="button green-button arrow">Learn more</a>
+          <a href="#" class="button green-button button-shadow">
+            Learn more
+            <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+              .cls-1 {
+                fill-rule: evenodd;
+              }
+            </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+          </a>
         </li>
       </ul>
       <section class="container" id="products">
@@ -142,7 +194,7 @@
         </div>
         <ul class="tab-items armchairs active">
           <li class="shop-item">
-            <a href="#" class="item"
+            <a class="shop-item-img text" href="#" class="item"
               ><img src="img/shop-items/armchairs/fusion-armchair.png" alt="Fusion armchair"
             /></a>
             <h3 class="product-title"><a href="#">Fusion armchair, LEXX</a></h3>
@@ -150,7 +202,7 @@
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"
+            <a class="shop-item-img text" href="#"
               ><img src="img/shop-items/armchairs/aurora-armchair.png" alt="Aurora armchair"
             /></a>
             <h3 class="product-title"><a href="#">Aurora armchair, MDS</a></h3>
@@ -158,15 +210,15 @@
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"
+            <a class="shop-item-img text" href="#"
               ><img src="img/shop-items/armchairs/cloud-armchair.png" alt="Cloud armchair"
             /></a>
             <h3 class="product-title"><a href="#">Cloud armchair, DIX</a></h3>
             <p class="price">150,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
-          <li class="shop-item">
-            <a href="#"
+          <li class="shop-item out-of-stock">
+            <a class="shop-item-img text" href="#"
               ><img src="img/shop-items/armchairs/jeanine-armchair.png" alt="Jeanine armchair"
             /></a>
             <h3 class="product-title">
@@ -178,7 +230,7 @@
         </ul>
         <ul class="tab-items lamps">
           <li class="shop-item">
-            <a href="#"
+            <a class="shop-item-img text" href="#"
               ><img src="img/shop-items/lamps/3-piece-minimal.png" alt="3-piece Minimal lamp"
             /></a>
             <h3 class="product-title"><a href="#">3-piece Minimal, ARM</a></h3>
@@ -186,19 +238,19 @@
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"><img src="img/shop-items/lamps/red-drops.png" alt="Red Drops lamp" /></a>
+            <a class="shop-item-img text" href="#"><img src="img/shop-items/lamps/red-drops.png" alt="Red Drops lamp" /></a>
             <h3 class="product-title"><a href="#">Red Drops, KUKO</a></h3>
             <p class="price">210,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"><img src="img/shop-items/lamps/delar.png" alt="Delar lamp" /></a>
+            <a class="shop-item-img text" href="#"><img src="img/shop-items/lamps/delar.png" alt="Delar lamp" /></a>
             <h3 class="product-title"><a href="#">Delar, Uni Studio</a></h3>
             <p class="price">350,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"><img src="img/shop-items/lamps/bubbles.png" alt="Bubbles lamp" /></a>
+            <a class="shop-item-img text" href="#"><img src="img/shop-items/lamps/bubbles.png" alt="Bubbles lamp" /></a>
             <h3 class="product-title"><a href="#">Bubbles, Udion</a></h3>
             <p class="price">410,00USD</p>
             <button type="button" class="outline-button">Order now</button>
@@ -206,19 +258,19 @@
         </ul>
         <ul class="tab-items tables">
           <li class="shop-item">
-            <a href="#"><img src="img/shop-items/tables/upi-table.png" alt="Upi table" /></a>
+            <a class="shop-item-img text" href="#"><img src="img/shop-items/tables/upi-table.png" alt="Upi table" /></a>
             <h3 class="product-title"><a href="#">Upi table, Landstrom</a></h3>
             <p class="price">90,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"><img src="img/shop-items/tables/monica-table.png" alt="Monica table" /></a>
+            <a class="shop-item-img text" href="#"><img src="img/shop-items/tables/monica-table.png" alt="Monica table" /></a>
             <h3 class="product-title"><a href="#">Monica table, Orro</a></h3>
             <p class="price">110,00USD</p>
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"
+            <a class="shop-item-img text" href="#"
               ><img src="img/shop-items/tables/snitch-cabinet.png" alt="Snitch cabinet"
             /></a>
             <h3 class="product-title"><a href="#">Snitch cabinet, ARM</a></h3>
@@ -226,7 +278,7 @@
             <button type="button" class="outline-button">Order now</button>
           </li>
           <li class="shop-item">
-            <a href="#"><img src="img/shop-items/tables/hugo-table.png" alt="Hugo table" /></a>
+            <a class="shop-item-img text" href="#"><img src="img/shop-items/tables/hugo-table.png" alt="Hugo table" /></a>
             <h3 class="product-title">
               <a href="#">Hugo table, KUKO studio</a>
             </h3>
@@ -251,11 +303,19 @@
           </div>
           <div class="carousel-btn-wrapper">
             <button class="prev-btn carousel-btn"></button>
-            <div class="arrow-wrapper"></div>
+            <div class="arrow-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                  <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"/>
+              </svg>
+            </div>
       </div>
       <div class="carousel-btn-wrapper">
             <button class="next-btn carousel-btn"></button>
-            <div class="arrow-wrapper"></div>
+            <div class="arrow-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                  <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"/>
+              </svg>
+            </div>
       </div>
         </div>
         </div>
@@ -270,7 +330,14 @@
               home or office. Our store presents the best KUKO sofas and armchairs from the
               collections of 2018-2020.
             </p>
-            <a href="#" class="button outline-button arrow">SHOP KUKO</a>
+            <a href="#" class="button outline-button">
+              Shop Kuko
+              <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                .cls-1 {
+                  fill-rule: evenodd;
+                }
+              </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+            </a>
           </div>
           <div class="content-img"><img src="img/colorful-by-kuko.webp" alt="Yellow sofa by KUKO" /></div>
         </div>
@@ -284,7 +351,14 @@
               to shabby chic. Such furniture will never go out of style and will catch the eye of
               your guests.
             </p>
-            <a href="#" class="button outline-button arrow">SHOP LANDSTROM</a>
+            <a href="#" class="button outline-button">
+              Shop Landstrom
+              <svg class = "button-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" x="0px" y="0px" style="max-width:100%" height="100%"><defs fill="currentColor"><style fill="currentColor">
+                .cls-1 {
+                  fill-rule: evenodd;
+                }
+              </style></defs><path data-name="28" class="cls-1" d="M34,18l-5-4v3H26v2h3v3ZM24,19H20V17h4v2Zm-6,0H14V17h4v2Zm-6,0H8V17h4v2ZM4,16a2,2,0,1,1-2,2A2,2,0,0,1,4,16Z" fill="currentColor"></path></svg>
+              </a>
           </div>
           <div class="content-img"><img src="img/classics-by-landstrom.webp" alt="Minimalist furnitureby Landstrom Design" /></div>
         </div>
@@ -297,7 +371,7 @@
             <ul class="reviews">
               <li class="review-wrapper">
                 <div class="card">
-                  <img src="img/customers-img/judy-peterson.webp" alt="Judy's profile picture" />
+                  <img class="profile-picture" src="img/customers-img/judy-peterson.webp" alt="Judy's profile picture" />
                   <p class="name">Judy Peterson</p>
                   <p class="city">New York</p>
                   <p class="message">
@@ -311,7 +385,7 @@
               </li>
               <li class="review-wrapper">
                 <div class="card">
-                  <img src="img/customers-img/kyle-hudson.webp" alt="Kyle's profile picture" />
+                  <img class="profile-picture" src="img/customers-img/kyle-hudson.webp" alt="Kyle's profile picture" />
                   <p class="name">Kyle Hudson</p>
                   <p class="city">Houston</p>
                   <p class="message">
@@ -326,7 +400,7 @@
             
               <li class="review-wrapper">
                 <div class="card">
-                  <img src="img/customers-img/hanna-levy.webp" alt="Hanna's profile picture" />
+                  <img class="profile-picture" src="img/customers-img/hanna-levy.webp" alt="Hanna's profile picture" />
                   <p class="name">Hanna Levy</p>
                   <p class="city">Boston</p>
                   <p class="message">
@@ -340,7 +414,7 @@
               </li>
               <li class="review-wrapper">
                 <div class="card">
-                  <img src="img/customers-img/jim-mockeen.webp" alt="Jim's profile picture" />
+                  <img class="profile-picture" src="img/customers-img/jim-mockeen.webp" alt="Jim's profile picture" />
                   <p class="name">Jim Mockeen</p>
                   <p class="city">Chicago</p>
                   <p class="message">
@@ -354,7 +428,7 @@
               </li>
               <li class="review-wrapper">
                 <div class="card">
-                  <img src="img/customers-img/karen-morning.webp" alt="Karen's profile picture" />
+                  <img class="profile-picture" src="img/customers-img/karen-morning.webp" alt="Karen's profile picture" />
                   <p class="name">Karen Morning</p>
                   <p class="city">Washington</p>
                   <p class="message">
@@ -369,11 +443,19 @@
             </ul>
             <div class="carousel-btn-wrapper">
               <button class="prev-btn carousel-btn"></button>
-              <div class="arrow-wrapper"></div>
+              <div class="arrow-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                  <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"/>
+              </svg>
+              </div>
             </div>
             <div class="carousel-btn-wrapper">
               <button class="next-btn carousel-btn"></button>
-              <div class="arrow-wrapper"></div>
+              <div class="arrow-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+                  <path xmlns="http://www.w3.org/2000/svg" d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"/>
+              </svg>
+              </div>
             </div>
           </div>
           <ul class="slider-dots">
@@ -483,7 +565,7 @@
             </div>
           </div>
         </div>
-        <iframe
+        <iframe tabindex="-1"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4147359377043!2d-73.86789958459445!3d40.730898779329806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e482aec40b1%3A0xf0e427633bfec4a0!2zOTMtNDAgUXVlZW5zIEJsdmQsIFF1ZWVucywgTlkgMTEzNzQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1625829130876!5m2!1suk!2sua"
           width="570"
           height="450"
@@ -510,7 +592,7 @@
           <p>
             <textarea name="message" placeholder="Type your message"></textarea>
           </p>
-          <input type="submit" value="SUBMIT" class="button green-button" />
+          <input type="submit" value="SUBMIT" class="button green-button button-shadow" />
         </form>
       </section>
     </main>
@@ -525,12 +607,12 @@
             </p>
           </div>
           <div class="footer-nav">
-            <a href="#promotions">Promotions</a>
-            <a href="#best-selling">Best-selling</a>
-            <a href="#products">2020 Collection</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#">Blog</a>
-            <a href="#contacts">Contact us</a>
+            <a class="menu-item" href="#promotions">Promotions</a>
+            <a class="menu-item" href="#best-selling">Best-selling</a>
+            <a class="menu-item" href="#products">2020 Collection</a>
+            <a class="menu-item" href="#testimonials">Testimonials</a>
+            <a class="menu-item" href="#">Blog</a>
+            <a class="menu-item" href="#contacts">Contact us</a>
           </div>
           <div class="footer-socials">
             <p>Follow Us</p>
@@ -538,12 +620,7 @@
               <li>
                 <a href="https://facebook.com/" class="fb">
                   <svg
-                    class="
-                      si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992
-                      svgIcon_1J7
-                      filled_Qbi
-                      darkTheme_3jZ
-                    "
+                    class="social-icon"
                     viewBox="0 0 32 32"
                     style="border-radius: 4px"
                   >
@@ -566,12 +643,7 @@
               <li>
                 <a href="https://instagram.com/" class="insta">
                   <svg
-                    class="
-                      si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992
-                      svgIcon_1J7
-                      filled_Qbi
-                      darkTheme_3jZ
-                    "
+                    class="social-icon"
                     viewBox="0 0 32 32"
                     style="border-radius: 4px"
                   >
@@ -610,12 +682,7 @@
               <li>
                 <a href="https://youtube.com/" class="ytube">
                   <svg
-                    class="
-                      si60e1f35c973d43002290236038f9436850b841fa89cca7b3c6cdc42a1625420643992
-                      svgIcon_1J7
-                      filled_Qbi
-                      darkTheme_3jZ
-                    "
+                    class="social-icon"
                     viewBox="0 0 32 32"
                     style="border-radius: 4px"
                   >
