@@ -14,7 +14,7 @@
   }
   const menuButton = document.querySelector('.burger-button');
   menuButton.addEventListener('click', showMenu);
-  // on link
+
   const menuLinks = document.querySelectorAll('.main-header .menu-link');
   menuLinks.forEach((link) => link.addEventListener('click', hideMenu));
   window.addEventListener('resize', () => {if (window.innerWidth > 991) hideMenu();});
@@ -79,8 +79,6 @@
       brandsCarousel(0);
     }, 100);
   });
-  // brandsCarousel end
-
   // testimonialsCarousel
   const testimonials = document.querySelector('.reviews');
   const testimonialsItems = document.querySelectorAll('.reviews .review-wrapper');
@@ -106,8 +104,8 @@
       testimonialsCarousel(0);
     }, 100);
   });
-  // testimonialsCarousel end
 
+  // accordion
   const detailsTitles = document.querySelectorAll('.about-us .detail h3');
   detailsTitles.forEach((item) => item.addEventListener('click', showDetail));
   function showDetail() {
@@ -136,11 +134,10 @@
     }
   }
 
+  //video controls
   const videoControls = document.getElementById('video-controls');
   videoControls.setAttribute('data-state', 'visible');
-
   function changeButtonState(type) {
-    // Play/Pause button
     if (type == 'playpause') {
        if (video.paused || video.ended) {
           playpause.setAttribute('data-state', 'play');

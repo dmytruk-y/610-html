@@ -8,6 +8,7 @@
 
 :root {
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
   --buttons-font: 'Hind', sans-serif;
   --main-color: #333;
   --accent-color: #7bb57c;
