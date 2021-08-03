@@ -145,7 +145,7 @@ a {
   /* display: block; */
   display: flex;
   align-items: center;
-  max-width: 108px;
+  width: 108px;
   z-index: 5;
 }
 .main-header nav {
@@ -172,7 +172,7 @@ a {
   justify-content: space-between;
   cursor: pointer;
 }
-.burger-button:hover {
+.burger-button:active {
   opacity: 0.5;
 }
 @media (min-width: 992px) {

@@ -1,5 +1,6 @@
 'use strict';
 (function() {
+  //burger-menu
   const menu = document.querySelector('.main-header nav');
   function showMenu() {
     document.body.classList.toggle('body-lock');
@@ -13,36 +14,31 @@
   }
   const menuButton = document.querySelector('.burger-button');
   menuButton.addEventListener('click', showMenu);
-  menuButton.addEventListener('keypress', (event) => {
-          if(event.key === ' ' || event.key === 'Enter') {
-              event.preventDefault();
-              showMenu();
-          }
-      });
-
+  // on link
   const menuLinks = document.querySelectorAll('.main-header .menu-link');
   menuLinks.forEach((link) => link.addEventListener('click', hideMenu));
   window.addEventListener('resize', () => {if (window.innerWidth > 991) hideMenu();});
 
+  // tabs
   const tabButtons = document.querySelectorAll('#products .tab-title');
   const tabs = document.querySelectorAll('#products .tab-items');
-  let activeTabButton = document.querySelector('#products .tab-title.active');
-  let activeTab = document.querySelector('#products .tab-items.active');
-  tabButtons.forEach((button) => button.addEventListener('click', onTabChange));
-  function onTabChange(event) {
-    if (activeTabButton === event.target) return;
-    activeTabButton.classList.remove('active');
-    activeTabButton = event.target;
-    activeTabButton.classList.add('active');
-    activeTab.classList.remove('active');
-    for (const value of activeTabButton.classList) {
-      for (const tab of tabs) {
-        if (tab.classList.contains(value)) {
-          tab.classList.add('active');
-          activeTab = tab;
-          return;
-        }
-      }
+  const showProductsTab = showTab(tabButtons, tabs);
+  tabButtons.forEach((button, index) => button.addEventListener('click', () => {
+    showProductsTab(index);
+  }));
+  showProductsTab();
+  function showTab(tabBtns, tabs) {
+    let currentIndex = 0;
+    return function (index = 0) {
+    if (index && index === currentIndex) return;
+    
+    tabBtns[currentIndex].classList.remove('active');
+    tabs[currentIndex].classList.remove('active');
+
+    tabBtns[index].classList.add('active');
+    tabs[index].classList.add('active');
+
+    currentIndex = index;
     }
   }
 
