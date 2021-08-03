@@ -463,6 +463,10 @@ button,
   padding-top: 90px;
   padding-bottom: 90px;
 }
+#best-selling .section-title,
+#best-selling .subtitle {
+  text-align: center;
+}
 
 .best-selling-list {
   width: 100%;
@@ -972,7 +976,10 @@ button,
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+#testimonials .section-title,
+#testimonials .subtitle {
+  text-align: center;
 }
 
 .reviews-wrapper {
@@ -1006,10 +1013,20 @@ button,
 }
 .reviews .card {
   background-color: var(--white-contrast-color);
-  padding: 50px 35px;
+  padding: 35px 35px;
   height: 100%;
+  box-sizing: border-box;
 }
-
+@media (min-width: 768px) {
+  .reviews .card {
+    padding: 40px 31px;
+  }
+}
+@media (min-width: 992px) {
+  .reviews .card {
+    padding: 50px 35px;
+  }
+}
 .reviews .profile-picture {
   width: 70px;
   height: 70px;
