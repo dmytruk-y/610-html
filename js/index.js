@@ -135,8 +135,41 @@
     }
     function showContent(element) {
       const content = element.nextElementSibling;
-      content.style.marginTop = '25' + 'px';
       content.style.maxHeight = content.scrollHeight + "px";
+      content.style.marginTop = '25' + 'px';
     }
   }
+
+  const videoControls = document.getElementById('video-controls');
+  videoControls.setAttribute('data-state', 'visible');
+
+  function changeButtonState(type) {
+    // Play/Pause button
+    if (type == 'playpause') {
+       if (video.paused || video.ended) {
+          playpause.setAttribute('data-state', 'play');
+       }
+       else {
+          playpause.setAttribute('data-state', 'pause');
+       }
+    }
+  }
+  const video = document.querySelector('.video video')
+  video.addEventListener('play', function() {
+    changeButtonState('playpause');
+  }, false);
+  video.addEventListener('pause', function() {
+    changeButtonState('playpause');
+  }, false);
+  video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    changeButtonState('playpause');
+  }, false);
+
+  const playpause = document.getElementById('playpause');
+  playpause.addEventListener('click', function(e) {
+    if (video.paused || video.ended) video.play();
+    else video.pause();
+  });
+
 }());
